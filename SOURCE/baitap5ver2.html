@@ -1,0 +1,175 @@
+<html>
+    <header>
+        <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Bài tập HTML 5</title>
+    </header>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0;
+        }
+
+        .hr {
+        width: 100px;
+        background-color: #FFBE4B;
+        border: 2px solid #FFBE4B;
+        margin-left: 0px;
+        display: inline-block;
+        }
+
+        .h1 {
+        font-family: "Montserrat";
+        color: #222229;
+        }
+
+        .icon {
+            color:#C4CFD5;
+            font-size: 20px;
+        }
+
+        .contact-container {
+            width: 100%;
+            margin: 0 auto;
+        }
+        
+        .left-container {
+        width: 20%;
+        margin-left: 0px;
+        display: inline-block;
+        }
+
+        .right-container {
+        width: 70%;
+        float:right;
+        }
+
+        .h2 {
+        font-family: "Montserrat";
+        color: #222229;
+        }
+
+        .p {
+        font-family: "Montserrat";
+        color: #C4CFD5;
+        font-size: 16px;
+        width: 80%;
+        }
+
+        .input {
+            background-color: white;
+            padding: 10px 20px;
+            border: 1px outset #C4CFD5;
+            box-shadow: 0 1px 2px 0px #ddd inset;
+            width: 100%;
+            font-family: "Montserrat";
+            font-size: 16px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .icon {
+            border:none;
+            height: 56px;
+            margin-left: 0;
+            line-height: 53px;
+            width: 56px;
+            font-size: 40px;
+            margin-right: 20px;
+            display: inline-flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button {
+            background-color: #0CB9C8;
+            border: 1px solid #0CB9C8;
+            color: white;
+            font-family: "Montserrat";
+            text-align: center;
+            height: 40px;
+            line-height: 15px;
+            width: 150px;
+            display: block;
+            padding-top: 10px;
+        }
+
+        .hover {
+            transition-duration: 0,5s;
+            cursor: pointer;
+        }
+
+        @media only screen and (max-width: 1182px){
+        /*for tablet:*/
+        .container {
+            display: block;
+           
+        }
+
+        .left-container {
+            width:100%;
+            display: block;
+            
+            
+        }
+
+        .contact-container {
+            width: 100%;
+        }
+
+        .p {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        
+        }
+
+        .right-container {
+            width: 100%;
+        }
+
+        .h2 {
+            text-align: center;
+        }
+        }
+    </style>
+    <body>
+        <div class="container">
+        <h1 class="h1">CONTACT US</h1>
+        <hr class="hr" />
+        <div class="contact-container">
+            <div class="left-container">
+                <h2 class="h2">Contact Info</h2>
+                <table class="wrapper">
+                    <tr>
+                        <td><icon class="icon">&#10004</icon></td>
+                        <td><p class="p">321  Awesome Street 
+                            New York, NY 17022</p></td>
+                    </tr>
+                    <tr>
+                        <td><icon class="icon">&#9993</td>
+                        <td><p class="p">infor@companyname.com</p></td>
+                    </tr>
+                    <tr>
+                        <td><icon class="icon">&#9990</icon></td>
+                        <td><p class="p" style="cursor: pointer;">+1 800 123 1234</p></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="right-container">
+                <h2 class="h2">Having Any Query! Or Book an appointment</h2>
+                <form class="wrapper">
+                    <input class="input" placeholder="Your Name">
+                    <input class="input" type="email" placeholder="Your Email">
+                    <input class="input" placeholder="Subject">
+                    <textarea class="input" rows="4" cols="100" placeholder="Message"></textarea>
+                </form>
+                <div class="wrapper">
+                    <div class="button hover">Send Message</div>
+                </div>
+            </div>
+            </div>
+    </body>
+</html>

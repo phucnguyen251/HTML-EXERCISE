@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+        <title>Bài tập HTML 4</title>
+    </head>
+    <style>
+        {
+            margin: 20px auto;
+            padding: 0;
+            width: 100%;
+        }
+        .hr {
+            width: 100%;
+            margin-top: 40px;
+            display: inline-block;
+            border-top: 1px solid black;
+            border-style: inset;
+            position: relative;
+            top:40px;
+            z-index: 10;
+        }
+        .h1 {
+            height: 80px;
+            width: 780px;
+            text-align: center;
+            font-family: "Trirong";
+            display: inline;
+            background-color: white;
+        }
+        .border {
+            border: 1px solid #fffff;
+            background-color: #fffff;
+            height: 40px;
+            width: 236px;
+            margin: 0 auto;
+            padding: 10px;
+            font-family:"Trirong";
+            font-size: 35px;
+            text-align: center;
+        }
+        .position {
+            position: relative;
+            z-index: 20;
+        }
+        .container {
+            display:flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        .box {
+            border: 1 px solid #8598CC;
+            background-color: #8598CC;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: center;
+            color: white;
+            height: 165px;
+            width: 20%;
+            margin: 20px 1%;
+            font-size: 20px;
+            font-family:"Sofia" ;
+        }
+        .hover {
+            cursor: pointer;
+        }
+        .center {
+            text-align: center;
+        }
+    </style>
+    <body>
+        <hr class="hr"/>
+        <div class="wrapper" style="text-align: center;">
+            <p class="border center h1 position">Great examples built with bootslander</p>
+        </div>
+    <div class="container">
+            <div class="box hover">Học Web Chuẩn</div>
+            <div class="box hover">Học Web Chuẩn</div>
+            <div class="box hover">Học Web Chuẩn</div>
+            <div class="box hover">Học Web Chuẩn</div>
+    </div>
+      
+    </body>
+</html>

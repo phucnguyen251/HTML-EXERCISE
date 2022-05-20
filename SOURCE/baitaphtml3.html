@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+        <title>Bài tập HTML 3</title>
+      
+    </head>
+    <style>
+        *{
+            padding: 0;
+        }
+        .display {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            align-content: flex-end;
+    
+        }
+        .container {
+            width: 100%;
+        }
+        #hocwebchuan {
+            background-color: #CCCCCC;
+            width: 20%;
+            height: 400px;
+            float: left;
+            margin-right: 20px;
+            border: 1px solid #CCCCCC;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+        #paragraph {
+            width: 65%;
+            height: auto;
+            float: right;
+        }
+        .Name {
+            font-size: 30px;
+            text-align: center;
+            color: aliceblue;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+        .h2 {
+            font-family:"Trirong";
+            font-size: 40px;
+        }
+        .p {
+            font-family:"Trirong";
+            font-size: 20px;
+        }
+        .button {
+            background-color:white;
+            border-radius: 4px;
+            color:black;
+            text-align: center;
+            display: block;
+            font-size: 16px;
+            margin-top: 25px;
+            margin-right: 6px;
+            line-height: 50px;
+            min-width: 142px;
+        }
+        .button1:hover {
+            background-color: #555555;
+            color: white;
+            transition-duration: 0.5s;
+        }
+    </style>
+    <body>
+    <div class="container display">
+        <div id="hocwebchuan" class="container">
+            <p class="Name hocwebchuan">Học Web Chuẩn</p>
+        </div>
+        <div id="paragraph" class="container paragraph">
+            <div class="container paragraph">
+                <p class="h2">
+                VESTIBULUM ULLAMCORPER UT LEO QUIS</p>
+                <div class="p">
+                <p>Aenean facilisis lectus ante, ut rutrum eros convallis et.<br>
+                    Vestibulum ullamcorper ut leo quis tristique. Donec in erat commodo, pharetra purus ac, consectetur lacus. Suspendisse odio sapien, egestas at ex sit amet, molestie sagittis est.
+                </p>
+                <p>
+                    In id purus imperdiet nisl accumsan scelerisque. Donec nec justo sed enim dapibus rhoncus. Morbi sed elit vitae metus ullamcorper efficitur.
+                </p>
+                <p>
+                    Fusce aliquam magna id ipsum ultricies interdum. Maecenas nibh risus.
+                </p>
+                </div>
+                <button class="button button1 p2">DETAIL</button>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
